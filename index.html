@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Duty List</title>
 </head>
 <body>
@@ -13,10 +14,28 @@
     </div>
     <div class="content">
         <nav class="topics">
-            <h2>Topics</h2>
+            <div class="nav-topic-title">
+                <h2>Topics</h2>
+            </div>
+           <div class="nav-content">
+                <input type="text" id="topic-title" placeholder="Add new Topic">
+                <button id="add-topic">Add Topic</button>
+           </div>
+           <div class="nav-topics">
+                <div >
+                <div data-name="Inbox">Inbox</div>
+                </div>
+           </div>
         </nav>
         <div class="todo-list-cont">
-
+            <div class="add-task-cont">
+                <input type="text" id="task-title" placeholder="Enter task title">
+                <input type="text" id="task-description" placeholder="Enter task description">
+                <button id="add-task-btn">&#x2b</button>
+            </div>
+            <div id="tasks">
+                
+            </div>
         </div>
     </div>
 </body>
