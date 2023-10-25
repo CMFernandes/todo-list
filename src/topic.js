@@ -11,8 +11,16 @@ export class Topic{
         return task
     }
 
-    removeTask(){
-        
+    removeTask(taskToRemove){
+        this.taskList.forEach((task,i)=> {
+            if(task.title === taskToRemove){
+            this.taskList.splice(i,1)
+            }
+        });
+    }
+
+    getTaskList() {
+        return this.taskList;
     }
 }
 

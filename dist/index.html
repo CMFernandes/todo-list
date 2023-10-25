@@ -12,24 +12,29 @@
     <div class="header">
         <h1>Duty List</h1>
     </div>
-    <div class="content">
+    
         <nav class="topics">
             <div class="nav-topic-title">
                 <h2>Topics</h2>
             </div>
            <div class="nav-content">
                 <input type="text" id="topic-title" placeholder="Add new Topic">
-                <button id="add-topic">Add Topic</button>
+                <button id="add-topic"><i class="fa fa-plus"></i>Topic</button>
            </div>
            <div class="nav-topics">
-                <div >
-                <div data-name="Inbox">Inbox</div>
-                </div>
+            <div class="topic-item">
+                <div data-name="Inbox">
+                <i class="fa fa-inbox"></i><div data-name="Inbox">Inbox</div>
+                </div> 
+            </div>
            </div>
         </nav>
         <div class="todo-list-cont">
-            
         </div>
-    </div>
+    <footer>
+        <p>Copyright ©
+        <script> document.write(new Date().getFullYear())</script>
+        CMFernandes</p>
+</footer>
 </body>
 </html>
