@@ -1,29 +1,25 @@
-import {Topic} from "./topic"
+import { Topic } from "./topic";
 
-export class TopicList{
-    constructor() {
-        this.topicList = [new Topic("Inbox")]
-    }
+export class TopicList {
+  constructor() {
+    this.topicList = [new Topic("Inbox")];
+  };
 
-    addTopic(title){
-        if(title !== ""){
-            this.topicList.push(new Topic(title));
-        }
-    }
+  addTopic(title) {
+    if (title !== "") {
+      this.topicList.push(new Topic(title));
+    };
+  };
 
-    removeTopic(topicToRemove){
-        this.topicList.forEach((topic,i)=> {
-            if(topic.title === topicToRemove){
-            this.topicList.splice(i,1)
-            }
-        });
-    }
+  removeTopic(topicToRemove) {
+    this.topicList.forEach((topic, i) => {
+      if (topic.title === topicToRemove) {
+        this.topicList.splice(i, 1);
+      }
+    });
+  };
 
-    getTopicList() {
-        return this.topicList;
-    }
-    
-}
-
-
-
+  getTopicList() {
+    return this.topicList;
+  }
+};
