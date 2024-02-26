@@ -5,8 +5,8 @@ export class Topic {
     this.taskList = [];
   }
 
-  addTask(title) {
-    const task = new Task(title);
+  addTask(title, description, dueDate) {
+    const task = new Task(title, description, dueDate);
     this.taskList.push(task);
     return task;
   }
