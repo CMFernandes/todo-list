@@ -1,4 +1,3 @@
-import { displayUi, initialize } from "./displayUi"
-import { displayTopics } from "./displayUi"
+import { initialize } from "./displayUi";
 
-initialize()
+initialize();
