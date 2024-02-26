@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Duty List</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Duty List</h1>
+    </div>
+
+    <nav class="topics">
+      <div class="nav-topic-title">
+        <h2>Topics</h2>
+      </div>
+      <div class="nav-content">
+        <input type="text" id="topic-title" placeholder="Add new Topic" />
+        <button id="add-topic"><i class="fa fa-plus"></i>Topic</button>
+      </div>
+      <div class="nav-topics">
+        <div class="topic-item">
+          <div data-name="Inbox">
+            <i class="fa fa-inbox"></i>
+            <div data-name="Inbox">Inbox</div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="todo-list-cont"></div>
+    <footer>
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        CMFernandes
+      </p>
+    </footer>
+  </body>
+</html>
