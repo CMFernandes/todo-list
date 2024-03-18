@@ -15,6 +15,11 @@ export function initialize() {
   const inBoxBtn = document.querySelector("[data-name='Inbox']");
   inBoxBtn.addEventListener("click", handleTopicsBtn);
 
+  const listItems = list.getTopicList();
+  const topic = listItems.find((item) => item.title === "Inbox");
+  
+  createTopicCont(topic)
+
   const addTopicBtn = document.getElementById("add-topic");
   addTopicBtn.addEventListener("click", addTop);
 }
@@ -51,7 +56,7 @@ export function displayTopicsBtn(title) {
   topicListNav.appendChild(topicItem);
 
   topicTitle.addEventListener("click", handleTopicsBtn);
-  trashIcon.addEventListener("click", (e) => delTopic);
+  trashIcon.addEventListener("click", delTopic);
 }
 
 export function createTopicCont(topic) {
