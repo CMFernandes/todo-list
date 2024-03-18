@@ -15,6 +15,7 @@ export function handleTopicsBtn(e) {
   const topic = listItems.find((item) => item.title === dataName);
   const todoCont = document.querySelector(".todo-list-cont");
   const existingTopic = todoCont.querySelector("h1");
+  
   if (existingTopic === null || existingTopic.textContent !== topic.title) {
     createTopicCont(topic);
   };
@@ -49,7 +50,7 @@ function clearTodoListContainer() {
 
 export function delTopic(e) {
   const dataName = e.target.getAttribute("data-name");
-  const displayedTopicTitle = document.querySelector(".topic-title").textContent;
+  const displayedTopicTitle = document.querySelector(".topic-title")?.textContent;
 
   list.removeTopic(dataName);
   removeTopicUI(dataName);
@@ -57,6 +58,7 @@ export function delTopic(e) {
   if (dataName === displayedTopicTitle) {
     clearTodoListContainer();
   };
+  
 };
 
 export function handleAddTasks() {
