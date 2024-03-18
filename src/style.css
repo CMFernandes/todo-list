@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Roboto&display=swap");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
 :root {
   --primary-color: rgb(21, 101, 121);
   --grey-color: rgba(201, 199, 199, 0.525);
